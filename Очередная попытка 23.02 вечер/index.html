@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>😣</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="jquery-linenumbers.js"></script>
+    <script>$('document').ready(function () {
+            $('#line_numbers').linenumbers({ col_width: '75px' });
+        })</script>
+</head>
+
+<body>
+
+    <section><textarea id=html></textarea></section>
+    <section><textarea id=css></textarea></section>
+    <section><textarea id=js></textarea></section>
+    <section><iframe id=res src=about:blank></iframe></section>
+    <button id=run>Run</button>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">🙈</a>
+
+        <div class="overlay-content">
+
+
+        </div>
+    </div>
+
+
+
+    <span class="openNav" onclick="openNav()">🙉</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+
+</html>

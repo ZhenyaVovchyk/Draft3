@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+section {
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+
+textarea,
+iframe {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  border: 1px solid silver;
+  background: rgba(0, 0, 0, 0);
+}
+
+#run {
+  position: fixed;
+  right: 50%;
+  bottom: 50%;
+}

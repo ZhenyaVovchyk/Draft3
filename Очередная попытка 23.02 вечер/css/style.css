@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+section {
+  position: absolute;
+    background-color: red;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;;
+  }
+
+  section textarea {
+      display: none;
+  }
+  section textarea:first-child {
+    display: block;
+   
+  }
+  
+  textarea, iframe {
+    height: 50%;
+    width: 50%;
+    border: none;
+    box-sizing: border-box;
+  }
+  
+  #run {
+    position: fixed;
+    right: 50%;
+    bottom: 50%;
+  }
+
+
+.overlay {
+    height: 100%;
+    width: 45%;
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+    left: -50%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: width ease 1s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    right: -15%;
+    width: 100%;
+    text-align: center;
+  
+    overflow: hidden;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0.5%;
+    right: 44%;
+    width: 5%;
+    
+}
+
+span {
+    width: 150%;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+}
+
+.openNav:hover {
+    width: 300%;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+

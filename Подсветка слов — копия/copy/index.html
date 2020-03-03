@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="ico/12.png" type="image/x-icon">
+    <title>NotBad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/emmet.js"></script>
+    <script src="js/jquery-linenumbers.js"></script>
+    <style>
+        main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .window {
+            width: 100%;
+            height: 100%;
+            background: red;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+
+
+        .window .window-header .language:hover {
+            background: rgba(0, 0, 0, 0);
+        }
+
+
+
+        .window .window-body .code-input,
+        .window .window-body .code-output {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+            border: none;
+            background: rgba(0, 0, 0, 0);
+            font-size: 20px;
+            white-space: pre-wrap;
+            line-height: 1.5em;
+            word-wrap: break-word;
+            box-sizing: border-box;
+        }
+
+        .code-input {
+            opacity: 0;
+        }
+
+        .window .window-body .code-input {
+            background: rgba(0, 0, 0, 0);
+            opacity: 1;
+            margin: 0;
+            color: green;
+            position: absolute;
+            z-index: auto;
+            overflow: hidden;
+        }
+
+        .window .window-body .code-output {
+            background: rgba(0, 0, 0, 0);
+            pointer-events: none;
+            margin: 0;
+            overflow-y: auto;
+            border: 1px black;
+        }
+
+        .window .window-body .code-output code {
+            border: 1px black;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            margin: 10px;
+            padding: 1rem;
+            display: block;
+            color: black;
+            font-size: 20px;
+            overflow-y: auto;
+        }
+
+        a.token {
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .token.selector,
+        .token.punctuation,
+        .token {
+            color: rgba(48, 29, 158, 0.712);
+            background: rgba(0, 0, 0, 0);
+            font-weight: bolder;
+        }
+
+        .keyword {
+            font-weight: bolder;
+            background-color: rgba(0, 0, 0, 0);
+            color: rgba(rgb(28, 238, 46), green, blue, alpha)
+        }
+
+
+        .token.number {
+            background-color: rgba(0, 0, 0, 0);
+            color: orangered;
+            font-weight: bolder;
+        }
+
+        .token.property,
+        .token.string,
+        .token.punctuation,
+        .token.tag-id {
+            color: DodgerBlue;
+            font-weight: bolder;
+        }
+
+        .token.function,
+        .token.attr-name {
+            color: CadetBlue;
+            font-weight: bolder;
+        }
+
+        .token.atrule .atrule-id {
+            color: BlueViolet;
+            font-weight: bolder;
+        }
+
+        .token.boolean {
+            color: LightSlateGray;
+            font-weight: bolder;
+        }
+
+        .token.comment {
+            color: DarkGrey;
+            font-weight: bolder;
+        }
+
+        .language-php .variable {
+            color: CadetBlue;
+            font-weight: bolder;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container_btn">
+        <div class="bottons">
+            <input type="button" value="start">
+            <select class="language">
+                <option value="javascript" selected>JavaScript</option>
+                <option value="markup">HTML</option>
+                <option value="php">PHP</option>
+            </select>
+        </div>
+    </div>
+    <main class="view">
+        <div class="window">
+            <div class="window-body">
+                <textarea class="code-input"></textarea>
+                <pre class="code-output">				<code class="language-javascript">
+					
+				</code>
+			</pre>
+            </div>
+        </div>
+    </main>
+    <div class="console">
+        <iframe class="console" src="https://jsconsole.com/"></iframe>
+    </div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js'></script>
+    <script src="js/codeHighLighting.js"></script>
+    <script src="js/drop.js"></script>
+</body>
+
+</html>

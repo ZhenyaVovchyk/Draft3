@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: url('../orange.PNG');
+  }
+  
+  section {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 4vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+.text {
+    padding-left: 3%;
+}
+
+
+  textarea, iframe {
+    height: 100%;
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: larger;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: bolder;
+  }
+  
+  #run {
+    background: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    border-radius: 50%;
+  }
+
+
+  textarea:first-of-type {
+      color: white;
+      font-weight: bolder;
+      background: rgba(0, 0, 0, 0);
+  }
+
+  .main {
+      width: 100%;
+      height: 3vh;
+      position: fixed;
+      background:grey; 
+      top: 0;  
+      transition: height ease 1s;
+      line-height: 0;
+      display: inline-flexbox;
+  }
+
+  .buttons {
+    text-align: center;
+    position: relative;
+    top: -5%;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    outline: none;
+    margin: -10px;
+    padding-top: 2%;
+  }
+
+  select:optional {
+    background: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    margin: -10px auto;
+    border-radius: 50%;
+    min-height: 20px;
+    min-width: 25px;
+  }
+
+  option {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .main select {
+    background: rgba(0, 0, 0, 0);
+    line-height: 1;
+    -webkit-appearance: none;
+   width: 4%;
+   height: 50%;
+   outline: none;
+  }
